@@ -9,31 +9,24 @@ import SwiftUI
 
 struct CreeView: View {
     
-    
+    func header() -> some View {
+        HStack {
+            // InstrumentSans-Bold.ttf
+            Text("Créer un event")
+                .font(Font.custom("InstrumentSans-Bold", size: 30))
+                .bold()
+                .padding()
+            Spacer()
+        }
+    }
     
     var body: some View {
-        
-        Text("Cree")
-        
-        
-        
-        
-        
-        
-        
-        
-    }// fin du body
-    
-    
-}// fin du CreelView
-
-
-
-
-
-
-
-
+        VStack {
+            header()
+            Spacer()
+        }
+    }
+}
 
 #Preview {
     CreeView()
