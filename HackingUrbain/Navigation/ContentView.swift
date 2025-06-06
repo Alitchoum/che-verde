@@ -8,25 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    
     var body: some View {
         TabView {
-            PickerView()
-                .tabItem {Label( "Carte", systemImage: "map.fill")}
+            mapView()
+            
+                .tabItem {Label( "Se rejoindre ", systemImage: "map.fill")}
+            
             TutorielView( )
-                .tabItem {Label( "Tutoriels", image: .plant)}
+            
+                .tabItem {Label( "Tutoriel ", image: .plant)}
+            
             CreeView()
-                .tabItem {Label( "Créer", systemImage: "plus.circle.fill")}
-            EventListView()
+            
+                .tabItem {Label( "Créer un  ", systemImage: "plus.circle.fill")}
+            
+            EvenementsView()
+            
                 .tabItem {Label( "Evenements ", image: .event)}
+            
             ProfilView()
-                .tabItem {Label( "Compte", systemImage: "person")}
+            
+                .tabItem {Label( "Profil ", systemImage: "person")}
+            
+            
+            
         }// fin du tabView
-        .tint(Color(.violet))
-        .onAppear(){
-            UITabBar.appearance().backgroundColor = UIColor.white
-        }
+        
     }// fin du body
+    
 }// fin du contentView
+
+
+
+
+
 
 #Preview {
     ContentView()

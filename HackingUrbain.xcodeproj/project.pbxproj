@@ -7,43 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D7D468A2DF1962400031242 /* InstrumentSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D7D46892DF1962400031242 /* InstrumentSans-Bold.ttf */; };
-		8D7D469C2DF1983C00031242 /* EventBlocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D46982DF1983C00031242 /* EventBlocView.swift */; };
-		8D7D469E2DF1983C00031242 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D46992DF1983C00031242 /* EventListView.swift */; };
-		8D7D469F2DF1983C00031242 /* StructEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D469B2DF1983C00031242 /* StructEvent.swift */; };
-		8D7D46A02DF1983C00031242 /* FilterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D469A2DF1983C00031242 /* FilterEventView.swift */; };
-		8D7D46B92DF1D41500031242 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D46B82DF1D3FD00031242 /* GalleryView.swift */; };
-		8D7D46BB2DF1E19A00031242 /* StructGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D46BA2DF1E19000031242 /* StructGallery.swift */; };
-		8D7D46BD2DF2066300031242 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D46BC2DF2065900031242 /* PickerView.swift */; };
 		FFDBBFF32DECB37C00929D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDBBFF02DECB37C00929D3A /* Assets.xcassets */; };
 		FFDBBFF42DECB37C00929D3A /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFE42DECB37C00929D3A /* mapView.swift */; };
 		FFDBBFF52DECB37C00929D3A /* CreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFE62DECB37C00929D3A /* CreeView.swift */; };
+		FFDBBFF62DECB37C00929D3A /* EvenementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFE82DECB37C00929D3A /* EvenementsView.swift */; };
 		FFDBBFF72DECB37C00929D3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFEA2DECB37C00929D3A /* ContentView.swift */; };
 		FFDBBFF82DECB37C00929D3A /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFEC2DECB37C00929D3A /* ProfilView.swift */; };
 		FFDBBFF92DECB37C00929D3A /* TutorielView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFEE2DECB37C00929D3A /* TutorielView.swift */; };
 		FFDBBFFA2DECB37C00929D3A /* HackingUrbainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFF12DECB37C00929D3A /* HackingUrbainApp.swift */; };
 		FFDBBFFF2DECB86800929D3A /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBFFE2DECB86800929D3A /* Struct.swift */; };
+		FFDBC09A2DF1DBDE00929D3A /* InstrumentSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFDBC0992DF1DBDE00929D3A /* InstrumentSans-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D7D46882DF1938F00031242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D7D46892DF1962400031242 /* InstrumentSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstrumentSans-Bold.ttf"; sourceTree = "<group>"; };
-		8D7D46982DF1983C00031242 /* EventBlocView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBlocView.swift; sourceTree = "<group>"; };
-		8D7D46992DF1983C00031242 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
-		8D7D469A2DF1983C00031242 /* FilterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterEventView.swift; sourceTree = "<group>"; };
-		8D7D469B2DF1983C00031242 /* StructEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructEvent.swift; sourceTree = "<group>"; };
-		8D7D46B82DF1D3FD00031242 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
-		8D7D46BA2DF1E19000031242 /* StructGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructGallery.swift; sourceTree = "<group>"; };
-		8D7D46BC2DF2065900031242 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		FFDBBFA92DECAC7B00929D3A /* HackingUrbain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackingUrbain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDBBFE42DECB37C00929D3A /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
 		FFDBBFE62DECB37C00929D3A /* CreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreeView.swift; sourceTree = "<group>"; };
+		FFDBBFE82DECB37C00929D3A /* EvenementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenementsView.swift; sourceTree = "<group>"; };
 		FFDBBFEA2DECB37C00929D3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFDBBFEC2DECB37C00929D3A /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		FFDBBFEE2DECB37C00929D3A /* TutorielView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorielView.swift; sourceTree = "<group>"; };
 		FFDBBFF02DECB37C00929D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFDBBFF12DECB37C00929D3A /* HackingUrbainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingUrbainApp.swift; sourceTree = "<group>"; };
 		FFDBBFFE2DECB86800929D3A /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		FFDBC0992DF1DBDE00929D3A /* InstrumentSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstrumentSans-Bold.ttf"; sourceTree = "<group>"; };
+		FFDBC09B2DF1DC0900929D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +61,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FFDBBFE52DECB37C00929D3A /* Map */ = {
+		FFDBBFE52DECB37C00929D3A /* CeRejoindre */ = {
 			isa = PBXGroup;
 			children = (
-				8D7D46B82DF1D3FD00031242 /* GalleryView.swift */,
-				8D7D46BC2DF2065900031242 /* PickerView.swift */,
-				8D7D46BA2DF1E19000031242 /* StructGallery.swift */,
+				FFDBBFEF2DECB37C00929D3A /* Tutoriel */,
 				FFDBBFE42DECB37C00929D3A /* mapView.swift */,
 			);
-			path = Map;
+			path = CeRejoindre;
 			sourceTree = "<group>";
 		};
 		FFDBBFE72DECB37C00929D3A /* CreeUnEvenement */ = {
@@ -95,10 +81,7 @@
 		FFDBBFE92DECB37C00929D3A /* Evenements */ = {
 			isa = PBXGroup;
 			children = (
-				8D7D46982DF1983C00031242 /* EventBlocView.swift */,
-				8D7D46992DF1983C00031242 /* EventListView.swift */,
-				8D7D469A2DF1983C00031242 /* FilterEventView.swift */,
-				8D7D469B2DF1983C00031242 /* StructEvent.swift */,
+				FFDBBFE82DECB37C00929D3A /* EvenementsView.swift */,
 			);
 			path = Evenements;
 			sourceTree = "<group>";
@@ -130,14 +113,13 @@
 		FFDBBFF22DECB37C00929D3A /* HackingUrbain */ = {
 			isa = PBXGroup;
 			children = (
-				8D7D46882DF1938F00031242 /* Info.plist */,
-				8D7D46892DF1962400031242 /* InstrumentSans-Bold.ttf */,
+				FFDBC09B2DF1DC0900929D3A /* Info.plist */,
+				FFDBC0992DF1DBDE00929D3A /* InstrumentSans-Bold.ttf */,
 				FFDBBFF12DECB37C00929D3A /* HackingUrbainApp.swift */,
 				FFDBBFFB2DECB7C100929D3A /* OnBoarding */,
 				FFDBBFFC2DECB7DF00929D3A /* Inscription */,
 				FFDBBFEB2DECB37C00929D3A /* Navigation */,
-				FFDBBFE52DECB37C00929D3A /* Map */,
-				FFDBBFEF2DECB37C00929D3A /* Tutoriel */,
+				FFDBBFE52DECB37C00929D3A /* CeRejoindre */,
 				FFDBBFE72DECB37C00929D3A /* CreeUnEvenement */,
 				FFDBBFE92DECB37C00929D3A /* Evenements */,
 				FFDBBFED2DECB37C00929D3A /* Profil */,
@@ -231,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDBBFF32DECB37C00929D3A /* Assets.xcassets in Resources */,
-				8D7D468A2DF1962400031242 /* InstrumentSans-Bold.ttf in Resources */,
+				FFDBC09A2DF1DBDE00929D3A /* InstrumentSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,17 +226,11 @@
 			files = (
 				FFDBBFF42DECB37C00929D3A /* mapView.swift in Sources */,
 				FFDBBFF52DECB37C00929D3A /* CreeView.swift in Sources */,
+				FFDBBFF62DECB37C00929D3A /* EvenementsView.swift in Sources */,
 				FFDBBFF72DECB37C00929D3A /* ContentView.swift in Sources */,
 				FFDBBFFF2DECB86800929D3A /* Struct.swift in Sources */,
-				8D7D46BB2DF1E19A00031242 /* StructGallery.swift in Sources */,
 				FFDBBFF82DECB37C00929D3A /* ProfilView.swift in Sources */,
 				FFDBBFF92DECB37C00929D3A /* TutorielView.swift in Sources */,
-				8D7D469C2DF1983C00031242 /* EventBlocView.swift in Sources */,
-				8D7D46B92DF1D41500031242 /* GalleryView.swift in Sources */,
-				8D7D469E2DF1983C00031242 /* EventListView.swift in Sources */,
-				8D7D469F2DF1983C00031242 /* StructEvent.swift in Sources */,
-				8D7D46A02DF1983C00031242 /* FilterEventView.swift in Sources */,
-				8D7D46BD2DF2066300031242 /* PickerView.swift in Sources */,
 				FFDBBFFA2DECB37C00929D3A /* HackingUrbainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +367,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HackingUrbain/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -419,6 +396,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HackingUrbain/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

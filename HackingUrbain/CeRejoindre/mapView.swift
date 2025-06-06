@@ -15,7 +15,6 @@ struct mapView: View {
     var body: some View {
         
         Text("map!")
-            .font(Font.custom("InstrumentSans-bold", size: 20))
         
         
         
