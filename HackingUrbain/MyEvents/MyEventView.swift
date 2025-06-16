@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct MyEventView: View {
+    
     @State private var selectedFilter: EventFilter = .present
     //    var user: User
     let eventColors: [Color] = [.vert, .violet, .orangeF]
     let eventImages: [String] = ["star", "diamond", "circle"]
+    
+    @Binding var showPicker: Bool;
     
     func dateKey(from string: String) -> Int {
         
@@ -117,7 +120,9 @@ struct MyEventView: View {
                     }
                 }
                 .fullScreenCover(item: $selectedEvent) { identifiable in
-                    InfoSelectedEventView(event: identifiable.event)
+                    InfoSelectedEventView(
+                        event: identifiable.event, showPicker: .constant(true)
+                    )
                 }
                 .padding()
             }
@@ -125,5 +130,5 @@ struct MyEventView: View {
     }
 }
 #Preview {
-    MyEventView()
+    MyEventView(showPicker: .constant(false))
 }

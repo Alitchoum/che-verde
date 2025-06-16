@@ -41,8 +41,6 @@ struct CreeView: View {
                         .background(Color.violet)
                         .background(.gray.opacity(0.15),in: .rect(cornerRadius: 30))
                 }
-                .foregroundColor(.black) // Couleur noire
-                .padding(.bottom, 10)
                 
                 VStack {
                     HStack {
@@ -111,6 +109,10 @@ struct CreeView: View {
                 .padding(.bottom, 10)
                 Button(action: {
                     showingAlert = true;
+                    input1 = "";
+                    input3 = "";
+                    input4 = "";
+                    numberOfPeople = 0;
                 }) {
                     Text("Créer")
                         .font(Font.custom("InstrumentSans-Bold",size: 16))                        .foregroundColor(.black)
