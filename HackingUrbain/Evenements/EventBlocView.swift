@@ -22,17 +22,19 @@ struct EventView: View {
                         .font(.system(size: 34, weight: .bold))
                         .multilineTextAlignment(.leading)
                         .padding()
-                    Rectangle() //trait
+                    Rectangle() //trait séparateur
                         .frame(width: 1, height: 73)
                     VStack(alignment: .leading) {
                         Text(event.titre)
                             .font(Font.custom("InstrumentSans-bold", size: 20))
                             .padding(.bottom, 5)
                         Text(event.description)
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                             .lineSpacing(2)
                             .lineLimit(3)
                             .truncationMode(.tail)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
                     }
                     .padding()
                 }
@@ -40,13 +42,13 @@ struct EventView: View {
                     Image(systemName: "clock.fill")
                         .padding(.leading, 20)
                     Text(event.heure)
-                        .font(.system(size: 12))
+                        .font(.system(size: 14))
                     ZStack { //tag
                         RoundedRectangle(cornerRadius: 25)
                             .stroke(Color.black, lineWidth: 1)
                             .frame(width: 80.0, height: 30.0)
                         Text(event.status)
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                     }
                     .padding(.leading, 20)
                     Spacer()
@@ -85,6 +87,7 @@ struct EventView: View {
             .padding(.bottom, 45)
         }
     }
+    //Structure pour rectangle fond asymetrique (radius - top/ no radius - bottom)
     struct RoundedCorner: Shape {
         var radius: CGFloat = 25.0
         var corners: UIRectCorner = .allCorners
@@ -103,4 +106,3 @@ struct EventView: View {
 #Preview {
     EventView(event: eventArray[0])
 }
-

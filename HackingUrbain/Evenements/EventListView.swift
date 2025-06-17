@@ -8,10 +8,13 @@ import SwiftUI
 
 struct EventListView: View {
     let events = eventArray
-    @State private var selectedFilter: Filter = filtersDate[0]
-    @State private var navigationPath = NavigationPath() // chemin de navigation
     
-    //struct pour appliquer filtres par date
+    // Par default selection filtre = "Tout voir"
+    @State private var selectedFilter: Filter = filtersDate[0]
+    
+    @Binding var showPicker: Bool;
+    
+    //Logique pour appliquer filtres par date
     var filteredEvents: [Event]  {
         let now = Date()
         let calendar = Calendar.current
@@ -30,8 +33,9 @@ struct EventListView: View {
             return events
         }
     }
+    
     var body: some View {
-        NavigationStack(path: $navigationPath) {
+        NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
                 ScrollView(.horizontal) {
                     ZStack {//BOUCLE FILTRES
@@ -47,10 +51,10 @@ struct EventListView: View {
                                 }
                             }
                         }
+                        .padding(.leading, 20)
                     }//FIN FILTRES
                 }
                 .scrollIndicators(.hidden)
-                .padding(.leading, 20)
                 if filteredEvents.isEmpty {
                     Spacer()
                     Text("Pas d'évènements pour le moment.")
@@ -58,20 +62,27 @@ struct EventListView: View {
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: .infinity, alignment: .center)
                     Spacer()
-                }
-                else {
+                } else {
                     ScrollView {
-                        VStack(spacing: -35) { //BOUCLE BLOC EVENT
+                        LazyVStack(spacing: -35) {
+                            //BOUCLE BLOC EVENT
                             ForEach(filteredEvents) { event in
-                                EventView(event: event)
+                                NavigationLink {
+                                    InfoSelectedEventView(event: event, showPicker: $showPicker)
+                                } label: {
+                                    EventView(event: event)
+                                }
                             }
                         }
                     }
                 }
             }
+            .foregroundStyle(.black)
         }//navigationStack
+        .tint(Color.black)
     }
 }
+
 #Preview {
-    EventListView()
+    EventListView(showPicker: .constant(false))
 }
